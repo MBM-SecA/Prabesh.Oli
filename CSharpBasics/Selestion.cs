@@ -1,5 +1,7 @@
 using System;
- class SelectionStatement{
+using LearnCOllection;
+
+class SelectionStatement{
 static void Main(){
     SelectionStatement ss = new SelectionStatement();
     ItterationStatement itteration = new ItterationStatement();
@@ -7,6 +9,8 @@ static void Main(){
     ss.LearnIfelse();
     ss.LearnSwitch();
     itteration.LearnWhile();
+    Collection collection = new Collection();
+    collection.LearnDictionary();
 
 }
 void LearnIfelse(){
