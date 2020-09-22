@@ -3,6 +3,10 @@ using LearnCOllection;
 
 class SelectionStatement{
 static void Main(){
+      FileIO fileIO = new FileIO();
+    fileIO.FileHandling();
+    fileIO.LearnFileInfo();
+    fileIO.LearnDirectories();
     SelectionStatement ss = new SelectionStatement();
     ItterationStatement itteration = new ItterationStatement();
     itteration.LearnLoop();
@@ -11,6 +15,7 @@ static void Main(){
     itteration.LearnWhile();
     Collection collection = new Collection();
     collection.LearnDictionary();
+   
 
 }
 void LearnIfelse(){
