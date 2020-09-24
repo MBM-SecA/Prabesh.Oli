@@ -1,8 +1,17 @@
 using System;
+using System.IO;
+using System.Linq;
 using LearnCOllection;
 
 class SelectionStatement{
 static void Main(){
+   var countriesText = File.ReadAllText("Countries.txt");
+           String [] countries = countriesText.Split("\r\n");
+         var countriesWithInitial = countries.Where(x => x.StartsWith("N")).Select(x => x);
+         foreach(var country in countriesWithInitial){
+             Console.WriteLine(country);
+         }
+
       FileIO fileIO = new FileIO();
     fileIO.FileHandling();
     fileIO.LearnFileInfo();
